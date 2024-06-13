@@ -1,11 +1,411 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practice</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<img src="confirm.png">  
+    <div class="page">
+        <header class="flex-row">
+            <div class="header-center flex-row">
+                <div class="flex-row">
+                    <img class="logo" src="img/logo.svg">
+                    <div class="text-links">
+                        <a>Вклады</a>
+                        <a>Кредиты</a>
+                        <a>Займы</a>
+                        <a>Карты</a>
+                        <a>Ипотека</a>
+                        <a>Страхование</a>
+                        <a>Инвестиции</a>
+                        <a>Бизнес</a>
+                        <a>Новости</a>
+                        <a>Ещё</a>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <img class="button-img" src="img/geo.svg">
+                    <img class="button-img" src="img/exit.svg">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="frame flex-row" id="frame1">
+                <div class="frame-text">
+                    <h1>Поможем подобрать вклады по вашим <br> потребностям</h1>
+                    <p>
+                        Fusce porta auctor bibendum. Donec convallis tellus risus, 
+                        pharetra facilisis leo bibendum eget. Ut sit amet commodo nunc.
+                        Phasellus hendrerit, dui quis mollis eleifend, lacus mauris accumsan lacus,
+                        ac cursus mi augue a justo. Aliquam erat volutpat.
+                    </p>
+                </div>
+                <img id="wallet-img" src="img/wallet.png">
+            </div>
+            
+            <div class="frame flex-row" id="frame2">
+                <div>
+                    <div class="frame-text" id="frame2-text">
+                        <h1 id="card-text">Вклады для души</h1>
+                        <p>
+                            Fusce porta auctor bibendum. Donec convallis tellus risus, 
+                            pharetra facilisis leo bibendum eget. Ut sit amet commodo nunc.
+                            Phasellus hendrerit, dui quis mollis eleifend, lacus
+                        </p>
+                    </div>
+                    <div class="card-container flex-row flex-row">
+                        <div class="card">
+                            <div class="card-label flex-row">
+                                <img src="img/alpha.svg">
+                                <span class="offer-name">Свои правила<br> с Банки.ру</span>
+                            </div>
+                            <div class="card-offer">
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Ставка, %</span>
+                                    <span class="offer-value" id="per-value">от 9,3%</span>
+                                </div>
+                                <div class="offer-param flex-row" id="deadline">
+                                    <span class="offer-text">Срок</span>
+                                    <span class="offer-value">181 дн.</span>
+                                </div>
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Сумма</span>
+                                    <span class="offer-value">30 000—10 000 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="card-button">Открыть вклад</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-label flex-row">
+                                <img src="img/alpha.svg">
+                                <span class="offer-name">Свои правила<br> с Банки.ру</span>
+                            </div>
+                            <div class="card-offer">
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Ставка, %</span>
+                                    <span class="offer-value" id="per-value">от 9,3%</span>
+                                </div>
+                                <div class="offer-param flex-row" id="deadline">
+                                    <span class="offer-text">Срок</span>
+                                    <span class="offer-value">181 дн.</span>
+                                </div>
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Сумма</span>
+                                    <span class="offer-value">30 000—10 000 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="card-button">Открыть вклад</div>
+                        </div>
+                        <div class="card">
+							<div class="card-label flex-row">
+                                <img src="img/alpha.svg">
+                                <span class="offer-name">Свои правила<br> с Банки.ру</span>
+                            </div>
+                            <div class="card-offer">
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Ставка, %</span>
+                                    <span class="offer-value" id="per-value">от 9,3%</span>
+                                </div>
+                                <div class="offer-param flex-row" id="deadline">
+                                    <span class="offer-text">Срок</span>
+                                    <span class="offer-value">181 дн.</span>
+                                </div>
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Сумма</span>
+                                    <span class="offer-value">30 000—10 000 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="card-button">Открыть вклад</div>
+						</div>
+                        <div class="card">
+							<div class="card-label flex-row">
+                                <img src="img/alpha.svg">
+                               <span class="offer-name"> Я очень длинное<br> название уберите …</span>
+                            </div>
+                            <div class="card-offer">
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Ставка, %</span>
+                                    <span class="offer-value" id="per-value">от 9,3%</span>
+                                </div>
+                                <div class="offer-param flex-row" id="deadline">
+                                    <span class="offer-text">Срок</span>
+                                    <span class="offer-value">181 дн.</span>
+                                </div>
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Сумма</span>
+                                    <span class="offer-value">30 000—10 000 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="card-button">Открыть вклад</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="frame flex-row" id="frame3">
+                <div>
+                    <div class="frame-text" id="frame3-text">
+                        <h1 id="card-text">Вклады с повышенным процентом</h1>
+                        <p>
+                            On the other hand, we denounce with righteous indignation and
+                            dislike men who are so
+                        </p>
+                    </div>
+                    <div class="card-container flex-row">
+                        <div class="card">
+                            <div class="card-label flex-row">
+                                <img src="img/alpha.svg">
+                                <span class="offer-name">Свои правила<br> с Банки.ру</span>
+                            </div>
+                            <div class="card-offer">
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Ставка, %</span>
+                                    <span class="offer-value" id="per-value">от 9,3%</span>
+                                </div>
+                                <div class="offer-param flex-row" id="deadline">
+                                    <span class="offer-text">Срок</span>
+                                    <span class="offer-value">181 дн.</span>
+                                </div>
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Сумма</span>
+                                    <span class="offer-value">30 000—10 000 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="card-button">Открыть вклад</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-label flex-row">
+                                <img src="img/alpha.svg">
+                                <span class="offer-name">Свои правила<br> с Банки.ру</span>
+                            </div>
+                            <div class="card-offer">
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Ставка, %</span>
+                                    <span class="offer-value" id="per-value">от 9,3%</span>
+                                </div>
+                                <div class="offer-param flex-row" id="deadline">
+                                    <span class="offer-text">Срок</span>
+                                    <span class="offer-value">181 дн.</span>
+                                </div>
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Сумма</span>
+                                    <span class="offer-value">30 000—10 000 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="card-button">Открыть вклад</div>
+                        </div>
+                        <div class="card">
+							<div class="card-label flex-row">
+                                <img src="img/alpha.svg">
+                                <span class="offer-name">Свои правила<br> с Банки.ру</span>
+                            </div>
+                            <div class="card-offer">
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Ставка, %</span>
+                                    <span class="offer-value" id="per-value">от 9,3%</span>
+                                </div>
+                                <div class="offer-param flex-row" id="deadline">
+                                    <span class="offer-text">Срок</span>
+                                    <span class="offer-value">181 дн.</span>
+                                </div>
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Сумма</span>
+                                    <span class="offer-value">30 000—10 000 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="card-button">Открыть вклад</div>
+						</div>
+                        <div class="card">
+							<div class="card-label flex-row">
+                                <img src="img/alpha.svg">
+                               <span class="offer-name"> Я очень длинное<br> название уберите …</span>
+                            </div>
+                            <div class="card-offer">
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Ставка, %</span>
+                                    <span class="offer-value" id="per-value">от 9,3%</span>
+                                </div>
+                                <div class="offer-param flex-row" id="deadline">
+                                    <span class="offer-text">Срок</span>
+                                    <span class="offer-value">181 дн.</span>
+                                </div>
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Сумма</span>
+                                    <span class="offer-value">30 000—10 000 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="card-button">Открыть вклад</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="frame flex-row" id="frame4">
+                <div>
+                    <div class="frame-text" id="frame4-text">
+                        <h1 id="card-text">Вклады со страховкой</h1>
+                        <p>
+                            On the other hand, we denounce with righteous indignation
+                            and dislike men who are so beguiled and demoralized by the
+                            charms of pleasure of the moment, so blinded by desire,
+                        </p>
+                    </div>
+                    <div class="card-container flex-row">
+                        <div class="card">
+                            <div class="card-label flex-row">
+                                <img src="img/alpha.svg">
+                                <span class="offer-name">Свои правила<br> с Банки.ру</span>
+                            </div>
+                            <div class="card-offer">
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Ставка, %</span>
+                                    <span class="offer-value" id="per-value">от 9,3%</span>
+                                </div>
+                                <div class="offer-param flex-row" id="deadline">
+                                    <span class="offer-text">Срок</span>
+                                    <span class="offer-value">181 дн.</span>
+                                </div>
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Сумма</span>
+                                    <span class="offer-value">30 000—10 000 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="card-button">Открыть вклад</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-label flex-row">
+                                <img src="img/alpha.svg">
+                                <span class="offer-name">Свои правила<br> с Банки.ру</span>
+                            </div>
+                            <div class="card-offer">
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Ставка, %</span>
+                                    <span class="offer-value" id="per-value">от 9,3%</span>
+                                </div>
+                                <div class="offer-param flex-row" id="deadline">
+                                    <span class="offer-text">Срок</span>
+                                    <span class="offer-value">181 дн.</span>
+                                </div>
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Сумма</span>
+                                    <span class="offer-value">30 000—10 000 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="card-button">Открыть вклад</div>
+                        </div>
+                        <div class="card">
+							<div class="card-label flex-row">
+                                <img src="img/alpha.svg">
+                                <span class="offer-name">Свои правила<br> с Банки.ру</span>
+                            </div>
+                            <div class="card-offer">
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Ставка, %</span>
+                                    <span class="offer-value" id="per-value">от 9,3%</span>
+                                </div>
+                                <div class="offer-param flex-row" id="deadline">
+                                    <span class="offer-text">Срок</span>
+                                    <span class="offer-value">181 дн.</span>
+                                </div>
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Сумма</span>
+                                    <span class="offer-value">30 000—10 000 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="card-button">Открыть вклад</div>
+						</div>
+                        <div class="card">
+							<div class="card-label flex-row">
+                                <img src="img/alpha.svg">
+                               <span class="offer-name"> Я очень длинное<br> название уберите …</span>
+                            </div>
+                            <div class="card-offer">
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Ставка, %</span>
+                                    <span class="offer-value" id="per-value">от 9,3%</span>
+                                </div>
+                                <div class="offer-param flex-row" id="deadline">
+                                    <span class="offer-text">Срок</span>
+                                    <span class="offer-value">181 дн.</span>
+                                </div>
+                                <div class="offer-param flex-row">
+                                    <span class="offer-text">Сумма</span>
+                                    <span class="offer-value">30 000—10 000 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="card-button">Открыть вклад</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-block">
+                <h1>
+                    Полезные материалы
+                </h1>
+                <div class="news-box flex-row">
+                    <div class="news" id="news1">
+                        <div class="main-news">
+                            <img src="img/cars.png">
+                            <p>Как открыть свой таксопарк</p>
+                            <span class="data">20.05.2024</span>
+                        </div>
+                        <div class="sub-news">
+                            <p>Не только НДФЛ: какие еще налоги затронет <br>
+                                реформа </p>
+                            <span class="data">29.05.2024</span>
+                        </div>
+                        <div class="sub-news">
+                            <p>Системные банки получат 256 млрд рублей для <br>
+                                кредитования МСП</p>
+                            <span class="data">18.12.2023</span>
+                        </div>
+                    </div>
+                    <div class="news" id="news2">
+                        <div class="main-news">
+                            <img src="img/cars.png">
+                            <p>Как открыть ИП без посещения <br> налоговой</p>
+                            <span class="data">07.05.2024</span>
+                        </div>
+                        <div class="sub-news">
+                            <p>В Bank of China ответили на сообщения о <br>
+                                прекращении приема платежей из РФ</p>
+                            <span class="data">21.02.2024</span>
+                        </div>
+                    </div>
+                    <div class="news" id="news3">
+                        <div class="main-news">
+                            <img src="img/cars.png">
+                            <p>Что такое гарантийное письмо и в <br> каких случаях оно необходимо</p>
+                            <span class="data">02.05.2024</span>
+                        </div>
+                        <div class="sub-news">
+                            <p>Hyundai Motor продает свой завод в России за 10 <br>
+                                тыс. рублей</p>
+                            <span class="data">19.12.2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="flex-row">
+            <div class="footer-center flex-row">
+                <div class="footer-text flex-row">
+                    <img src="img/lil_logo.svg">
+                    <span>
+                        САМЫЙ БОЛЬШОЙФИНАНСОВЫЙ МАРКЕТПЛЕЙС В РОССИИ*
+                    </span>
+                </div>
+                <div class="footer-buttons flex-row">
+                    <img src="img/dzen.svg">
+                    <img src="img/twitter.svg">
+                    <img src="img/vk.svg">
+                    <img src="img/tel.svg">
+                    <img id="ok-ico" src="img/ok.svg">
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
-</html>
