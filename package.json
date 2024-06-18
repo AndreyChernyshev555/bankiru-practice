@@ -1,0 +1,23 @@
+{
+  "name": "bankiru-practice",
+  "version": "1.0.0",
+  "dependencies": {
+    "express":"^4.19.2"
+  },
+  "description": "Email: achernyshev555@yandex.ru   Telegram: @ScriptorRomae",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreyChernyshev555/bankiru-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreyChernyshev555/bankiru-practice/issues"
+  },
+  "homepage": "https://github.com/AndreyChernyshev555/bankiru-practice#readme"
+}

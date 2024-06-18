@@ -9,7 +9,6 @@ body{
     font-family: "Roboto", sans-serif;
     text-shadow: 0.2px 0.2px 0.2px #acacac;
     margin: auto;
-    width: 1440px;
 }
 .flex-row {
     display: flex;
@@ -19,12 +18,14 @@ header{
     background-color: white;
     height: 80px;
     box-shadow: 0px 1px 2px 0px #16213629;
+    justify-content: center;
 }
 footer{
     height: 80px;
     background-color: #EBF5FF;
     vertical-align: top;
     margin-top: 64px;
+    justify-content: center;
 }
 .logo {
     width: 170px;
@@ -247,7 +248,6 @@ main {
     justify-content: space-between;
     vertical-align: bottom;
     text-align: center;
-    margin-left: 51px;
     height: 24px;
     width: 1312px;
     margin-top: 30px;
