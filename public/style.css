@@ -1,14 +1,18 @@
 .marginzero {
     margin: 0;
 }
+
 .ultrabold { font-weight: 900; }
+
 .news-header { 
     margin: 0; 
     font-weight: 500;
     padding-top: 20px;
     padding-bottom: 30px;
 }
+
 .paragraph { line-height: 24px; }
+
 .page {
     background-color: #EEEEEE;
     color: #162136;
