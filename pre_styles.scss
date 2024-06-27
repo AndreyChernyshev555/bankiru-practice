@@ -6,6 +6,7 @@ $line-color: rgba(220, 220, 220, 0.5);
 $shadow-color: rgba(0,0,0,0.1);
 $card-button-color: #039BE5;
 $footer-color: #EBF5FF;
+$hover-color: #039c69;
 
 .marginzero {
     margin: 0;
@@ -49,18 +50,20 @@ $footer-color: #EBF5FF;
     color: $text-hint;
 }
 
-.flex-row {
+@mixin flex-row {
     display: flex;
     flex-direction: row;
 }
 
 .head{
+    @include flex-row;
     background-color: $secondary-back;
     box-shadow: 0px 1px 2px 0px $shadow-color;
     justify-content: center;
 }
 
 .head-content {
+    @include flex-row;
     width: 68.3%;
     min-height: 80px;
     background-color: $secondary-back;
@@ -68,6 +71,7 @@ $footer-color: #EBF5FF;
 }
 
 .head-content_text {
+    @include flex-row;
     justify-content: space-between;
     flex-wrap: wrap;
     min-width: 63.5%;
@@ -77,6 +81,7 @@ $footer-color: #EBF5FF;
 }
 
 .head-content_buttons { 
+    @include flex-row;
     padding-top: 2.25%;
     padding-left: 12%; 
     min-width: 80px;
@@ -103,6 +108,7 @@ $footer-color: #EBF5FF;
     padding-left: 15.75%;
 }
 .main-frame{
+    @include flex-row;
     justify-content: space-between;
     padding-bottom: 6.875em;
 }
@@ -128,9 +134,7 @@ $footer-color: #EBF5FF;
 }
 
 .offers-frame{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @extend .offers;
     gap: 10px;
 }
 
@@ -139,6 +143,7 @@ $footer-color: #EBF5FF;
 }
 
 .cards {
+    @include flex-row;
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 2em;
@@ -152,6 +157,7 @@ $footer-color: #EBF5FF;
     text-align: center;
 }
 .card_label{
+    @include flex-row;
     justify-content: space-between;
     border-bottom: 0.5px solid $line-color;
     font-size: 14px;
@@ -162,6 +168,7 @@ $footer-color: #EBF5FF;
     text-align: right;
 }
 .offer-param{
+    @include flex-row;
     justify-content: space-between;
     height: 32px;
     margin-bottom: 5%;
@@ -195,10 +202,10 @@ $footer-color: #EBF5FF;
     vertical-align: middle;
     transition-property: background;
     transition-duration: 0.35s;
-}
 
-.card_button:hover{
-    background: #039c69;
+    &:hover {
+        background: $hover-color;
+    }
 }
 
 .news-block{
@@ -208,6 +215,7 @@ $footer-color: #EBF5FF;
 }
 
 .news {
+    @include flex-row;
     justify-content: space-around;
     background: $secondary-back;
     gap: 1.25%;
@@ -243,6 +251,7 @@ $footer-color: #EBF5FF;
 }
 
 .footer{
+    @include flex-row;
     height: 80px;
     background-color: $footer-color;
     vertical-align: top;
@@ -250,6 +259,7 @@ $footer-color: #EBF5FF;
     justify-content: center;
 }
 .footer-center{
+    @include flex-row;
     justify-content: space-between;
     vertical-align: bottom;
     text-align: center;
@@ -258,6 +268,7 @@ $footer-color: #EBF5FF;
     margin-top: 30px;
 }
 .footer-text{
+    @include flex-row;
     gap: 3%;
     color: $text-hint;
     font-size: 14px;
@@ -270,6 +281,7 @@ $footer-color: #EBF5FF;
 .footer-text_img { margin-right: 2px; }
 
 .footer-buttons{
+    @include flex-row;
     justify-content: space-between;
     width: 20%;
 }
@@ -319,7 +331,6 @@ $footer-color: #EBF5FF;
         width: 100%;
     }
     .cards {
-        justify-content: space-between;
         width: 100%;
     }
     .card {
