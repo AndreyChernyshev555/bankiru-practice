@@ -144,8 +144,8 @@ $hover-color: #039c69;
 
 .cards {
     @include flex-row;
-    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 2.41%;
     row-gap: 2em;
 }
 .card {
