@@ -167,6 +167,11 @@ $hover-color: #039c69;
     padding-bottom: 1.75em;
     text-align: right;
 }
+
+.card_label-img {
+    width: 50%;
+    height: 50px;
+}
 .offer-param{
     @include flex-row;
     justify-content: space-between;

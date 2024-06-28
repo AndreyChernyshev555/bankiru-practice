@@ -1,6 +1,7 @@
 import './pre_styles.scss'
 
 const cards = Array(3).fill(null);
+const banks = ['img/alpha.svg', 'img/sber.svg', 'img/t_bank.svg', 'img/gazprombank.svg', 'img/vtb.svg'];
 
 for (let i = 0; i < 3; i++) {
     const card_amount = Math.floor(Math.random()*7 + 1);
@@ -9,7 +10,7 @@ for (let i = 0; i < 3; i++) {
         const card = {
             id: Math.floor(Math.random()*100),
             name: 'Вклад ' + String(Math.floor(Math.random()*100)),
-            logo: 'img/alpha.svg',
+            logo: banks[Math.floor(Math.random()*banks.length)],
             rate: String(Math.floor(Math.random()*200+30)/10) + '%', // ставка
             period: String(Math.floor(Math.random()*335+30)) + ' дн.', // срок
             amount_min: String(100000) + ' ₽', // сумма
@@ -65,7 +66,7 @@ window.addEventListener("load", function() {
             const card = {
                 id: Math.floor(Math.random()*100),
                 name: 'Вклад ' + String(Math.floor(Math.random()*100)),
-                logo: 'img/alpha.svg',
+                logo: banks[Math.floor(Math.random()*banks.length)],
                 rate: String(Math.floor(Math.random()*200+30)/10) + '%', // ставка
                 period: String(Math.floor(Math.random()*335+30)) + ' дн.', // срок
                 amount_min: String(100000) + ' ₽', // сумма
