@@ -208,6 +208,26 @@ $hover-color: #039c69;
     }
 }
 
+.offers_create-button {
+    background: $card-button-color;
+    color: $secondary-back;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.56em;
+    text-align: center;
+    max-height: 2.67em;
+    border-radius: 0.44em;
+    margin-top: 1.11em;
+    padding: 0.55em 0px 0.55em 0px;
+    vertical-align: middle;
+    transition-property: background;
+    transition-duration: 0.35s;
+
+    &:hover {
+        background: $hover-color;
+    }
+}
+
 .news-block{
     font-size: 32px;
     font-weight: 500;
